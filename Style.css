@@ -1,0 +1,841 @@
+@font-face {
+    font-family: 'Merriweather Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Orbitron', Helvetica, Arial, sans-serif;
+    background-color: black;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-x: hidden;
+    /*overflow-y: hidden;*/
+}
+
+#geral {
+    position: relative;
+    /*animation: geral 0.5s forwards;*/
+}
+
+@keyframes geral {
+    from {
+        right: 0px;
+    }
+    to {
+        right: 120px;
+    }
+}
+
+#cancel {
+    color: #989FA3;
+    margin: 0px 0px 40px;
+    position: relative;
+    top: 20px;
+    left: 200px;
+}
+
+#cancel i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+#linha1 {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+#linha2 {
+    transform: rotate(135deg);
+}
+
+#menu_geral {
+    background-color: black;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    display: none;
+}
+
+@keyframes menu_geral {
+    from {
+        right: -250px;
+    }
+    to {
+        right: 0px;
+    }
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#menu_geral>ul>li {
+    list-style-type: none;
+    font-size: 0.9em;
+    padding: 0px 15px;
+}
+
+#home a {
+    color: white;
+}
+
+.select a {
+    color: #989FA3;
+}
+
+.select a:hover {
+    color: white;
+}
+
+#home {
+    color: white;
+}
+
+.select {
+    color: #989FA3;
+    font-weight: 1;
+}
+
+hr {
+    border: 0px;
+    border-top: 1px solid #19191a;
+    margin: 13px 0px;
+}
+
+nav {
+    position: relative;
+}
+
+#bg1{
+    z-index: -1;
+    width: 100vw;
+    height: 175vh;
+    position: relative;
+    bottom: 190px;
+    right: 1vw;
+    user-select: none;
+}
+
+img#satelite{
+    width: 59%;
+    height: auto;
+    position: relative;
+    bottom: 830px;
+    left: 600px;
+}
+
+div#header {
+    position: relative;
+    left: 130px;
+    width: 1038px;
+    height: 75px;
+}
+
+img#universe {
+    width: 31%;
+    left: 13px;
+    position: relative;
+    top: 7px;
+}
+
+div#inicio {
+    width: 100%;
+    height: 57px;
+    position: fixed;
+    background-color: black;
+    display: none;
+    animation: header-animation 0.4s;
+    z-index: 20;
+}
+
+div#header2 {  
+    width: 1038px;
+    height: 57px;
+    position: fixed;
+    left: 130px;
+    background-color: black;
+}
+
+img#universe2 {
+    width: 18%;
+    position: relative;
+    top: 12px;
+    left: 13px;
+}
+
+@keyframes header-animation {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+
+#menu1 {
+    color: white;
+    position: relative;
+    left: 990px;
+    bottom: 45px;
+}
+
+#menu01 {
+    cursor: pointer;
+}
+
+#menu2 {
+    color: white;
+    position: relative;
+    left: 990px;
+    bottom: 25px;
+}
+
+#menu02 {
+    cursor: pointer;
+}
+
+div#text1 {
+    width: 50%;
+    text-align: center;
+}
+
+span#txt1 {
+    position: relative;
+    color: white;
+    bottom: 1350px;
+    left: 345px;
+    font-size: 3.7em;
+    text-align: center;
+    font-weight: 1;
+}
+
+div#txt2 {
+    color: white;
+    position: relative;
+    bottom: 1085px;
+    left: 175px;
+    width: 25%;
+}
+
+#txt2>h1 {
+    font-size: 1.3em;
+    padding-bottom: 10%;
+    font-weight: 1;
+}
+
+#txt2>p {
+    font-size: 0.85em;
+    line-height: 22px;
+    color: grey;
+    font-weight: 1;
+}
+
+div#txt3 {
+    position: relative;
+    left: 800px;
+    bottom: 1150px;
+    width: 18%;
+}
+
+#txt3>p {
+    color: grey;
+    position: relative;
+    font-size: 0.9em;
+    font-family: "Open Sans";
+    left: 20px;
+    bottom: 80px;
+    font-weight: 1;
+}
+
+div.imgs1 {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    position: relative;
+    bottom: 1100px;
+    left: 150px;
+}
+
+.cj1 img {
+    height: auto;
+    max-width: 100%;
+    width: 140px;
+    margin: 0px 0px 15px;
+}
+
+.cj1 {
+    width: 25%;
+}
+
+.cj1 h4 {
+    font-size: 1.3em;
+    color: #D1DADF;
+    margin: 0px 0px 15px;
+    position: relative;
+    left: 40px;
+}
+
+.cj1 p {
+    text-align: center;
+    font-size: 0.9em;
+    color: #989FA3;
+    margin: 0px 0px 15px;
+    position: relative;
+    right: 45px;
+    width: 80%;
+    font-weight: 1;
+}
+
+#h42 {
+    position: relative;
+    left: 10px;
+}
+
+#h43 {
+    position: relative;
+    left: 22px;
+}
+
+.imgs2 {
+    position: relative;
+    bottom: 1120px;
+    left: 120px;
+    width: 100%;
+}
+
+.imgs2 img {
+    height: 450px;
+    width: 40%;
+}
+
+#ptxt {
+    position: relative;
+    top: 400px;
+    left: 40px;
+    max-width: 34%;
+    line-height: 25px;
+}
+
+#part1 h3 {
+    color: #D1DADF;
+    font-size: 1.7em;
+    margin: 0px 0px 15px;
+    font-weight: 1;
+}
+
+#part1 p {
+    color: #989FA3;
+    font-size: 0.9em;
+    margin: 0px 0px 50px;
+    font-weight: 1;
+}
+
+#link1 {
+    height: 50px;
+    width: 160px;
+    border: 2px solid #D1DADF;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 0px 10px 15px 0px;
+    color: #D1DADF;
+    font-weight: 1;
+}
+
+#link2 {
+    max-width: 160px;
+    max-height: 50px;
+}
+
+#link2:hover {
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+#link2 a {
+    text-decoration: none;
+}
+
+#part2 {
+    position: relative;
+    bottom: 1500px;
+    left: 700px;
+    width: 20%;
+}
+
+#part2 p {
+    color: #989FA3;
+    font-size: 0.9em;
+    font-weight: 1;
+    line-height: 25px;
+}
+
+#part2 h2 {
+    margin: 0px 0px 15px;
+    font-size: 2em;
+    color: #D1DADF;
+    letter-spacing: -4px;
+    font-weight: 1;
+}
+
+#part2 sub {
+    font-size: 0.85em;
+    color: #D1DADF;
+}
+
+#globo {
+    position: relative;
+    z-index: 1;
+    bottom: 1370px;
+    left: 500px;
+}
+
+#globo img {
+    height: auto;
+    width: 570px;
+}
+
+#quilometragem {
+    position: relative;
+    bottom: 1730px;
+    left: 180px;
+    width: 15%;
+}
+
+#quilometragem h2 {
+    color: #D1DADF;
+    font-weight: 1;
+    margin: 0px 0px 15px;
+    font-size: 2em;
+}
+
+#quilometragem p {
+    color: #989FA3;
+    font-weight: 1;
+    font-size: 0.85em;
+}
+
+section.sol {
+    position: absolute;
+    top: 375vh;
+    height: 1900px;
+    width: 1920px;
+}
+
+#part3 {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    bottom: 1600px;
+    left: 80px;
+    width: 60%;
+}
+
+#part3 h3 {
+    color: #D1DADF;
+    font-weight: 1;
+    font-size: 1.5em;
+}
+
+#part3 p {
+    color: #989FA3;
+    font-weight: 1;
+    font-size: 0.85em;
+    width: 25%;
+    line-height: 25px;
+}
+
+#part3 p#p2 {
+    position: absolute;
+    top: 30vh;
+    left: 30.7vw;
+}
+
+#planetas {
+    position: relative;
+    bottom: 1300px;
+    left: 80px;
+}
+
+#planetas img {
+    height: auto;
+    width: 58%;
+}
+
+#text_ts {
+    position: relative;
+    bottom: 1180px;
+    width: 20%;
+    left: 120px;
+}
+
+#text_ts h4 {
+    color: #D1DADF;
+    font-size: 1.3em;
+    line-height: 28px;
+}
+
+#system {
+    position: relative;
+    bottom: 1050px;
+    left: 180px;
+}
+
+#system ul>li {
+    list-style-type: none;
+}
+
+#system h6 {
+    color: #D1DADF;
+    font-weight: 1;
+    margin: 0px 0px 7px;
+    padding: 0px 40px 0px 0px;
+    font-size: 0.85em;
+}
+
+/*#cd1 h6 {
+    color: #D1DADF;
+    font-weight: 1;
+    margin: 0px 0px 7px;
+    padding: 0px 40px 0px 0px;
+    font-size: 14px;
+}*/
+
+
+
+.barra {
+    height: 6px;
+    background: white;
+    border-radius: 5px;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 6px, rgba(0,0,0,.07) 6px, rgba(0,0,0,.07) 14px);
+    margin: 0px 0px 25px;
+}
+
+#barra1 {
+    width: 350px;
+    animation: barra1 1s;
+}
+
+@keyframes barra1 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 350px;
+    }
+}
+
+#barra2 {
+    width: 250px;
+    animation: barra2 1s;
+}
+
+@keyframes barra2 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 250px;
+    }
+}
+
+#barra3 {
+    width: 150px;
+    animation: barra3 1s;
+}
+
+@keyframes barra3 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 150px;
+    }
+}
+
+#barra4 {
+    width: 50px;
+    animation: barra4 1s;
+}
+
+@keyframes barra4 {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 50px;
+    }
+}
+
+#txt_barra {
+    position: relative;
+    bottom: 1280px;
+    left: 740px;
+    width: 18%;
+}
+
+#txt_barra p {
+    color: #989FA3;
+    line-height: 25px;
+    margin: 0px 0px 15px;
+    font-size: 0.8em;
+}
+
+section#moon {
+    position: absolute;
+    top: 650vh;
+    width: 100%;
+    height: 2910px;
+}
+
+#txtmoon {
+    position: relative;
+    top: 430px;
+    left: 550px;
+}
+
+#txtmoon h3 {
+    color: #D1DADF;
+    font-weight: 1;
+    font-size: 1.6em;
+}
+
+div#mfase {
+    position: relative;
+    top: 500px;
+    left: 140px;
+}
+
+#mfase img {
+    height: auto;
+    width: 75%;
+}
+
+#txtmoon2 {
+    position: relative;
+    top: 550px;
+    width: 30%;
+    left: 440px;
+}
+
+#txtmoon2 p {
+    color: #989FA3;
+    margin: 0px 0px 15px;
+    font-weight: 1;
+    font-size: 0.95em;
+    line-height: 25px;
+}
+
+#bg_mars {
+    position: relative;
+    top: 730px;
+    left: 120px;
+}
+
+#bg_mars img {
+    height: 450px;
+    width: 40%;
+}
+
+#bg_mars h3 {
+    color: #D1DADF;
+    position: relative;
+    font-weight: 1;
+    bottom: 380px;
+    left: 50px;
+    font-size: 1.7em;
+}
+
+#bg_mars p {
+    color: #989FA3;
+    font-weight: 1;
+    position: relative;
+    bottom: 350px;
+    left: 50px;
+    width: 33%;
+    line-height: 25px;
+    font-size: 0.85em;
+}
+
+#link5 {
+    height: 50px;
+    width: 160px;
+    border: 2px solid #D1DADF;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin: 0px 10px 15px 0px;
+    color: #D1DADF;
+    font-weight: 1;
+    position: relative;
+    bottom: 310px;
+    left: 50px;
+}
+
+#link4 {
+    max-width: 160px;
+    max-height: 50px;
+}
+
+#link4:hover {
+    background-color: white;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+#link4 a {
+    text-decoration: none;
+}
+
+#textmoon {
+    position: relative;
+    top: 110px;
+    left: 700px;
+    width: 20%;
+}
+
+#textmoon h2 {
+    color: #D1DADF;
+    font-weight: 1;
+    font-size: 2em;
+    margin: 0px 0px 15px;
+}
+
+#textmoon p {
+    color: #989FA3;
+    font-weight: 1;
+    line-height: 25px;
+    font-size: 0.85em;
+}
+
+#planet {
+    position: relative;
+    left: 480px;
+    top: 140px;
+}
+
+#planet img {
+    height: auto;
+    width: 43%;
+}
+
+#planet div {
+    width: 20%;
+    position: relative;
+    right: 300px;
+    bottom: 350px;
+}
+
+#planet h2 {
+    font-weight: 1;
+    color: #D1DADF;
+    margin: 0px 0px 15px;
+    font-size: 1.9em;
+}
+
+#planet p {
+    font-weight: 1;
+    color: #989FA3;
+    line-height: 25px;
+    width: 80%;
+    font-size: 0.85em;
+}
+
+#txt_planet {
+    position: relative;
+    left: 380px;
+    top: 150px;
+}
+
+#txt_planet img {
+    height: 300px;
+}
+
+#txt_planet h4 {
+    position: relative;
+    color: #D1DADF;
+    left: 50px;
+    bottom: 300px;
+    line-height: 25px;
+    font-size: 1.3em;
+    width: 30%;
+}
+
+section#slide {
+    position: absolute;
+    top: 1090vh;
+    width: 100%;
+}
+
+#slide section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#slide section:nth-of-type(1) {
+    background-image: url(/Images/universe-gallery-item-1.jpg);
+    min-height: 680px;
+}
+
+#slide section:nth-of-type(2) {
+    background-image: url(/Images/universe-gallery-item-2.jpg);
+    min-height: 680px;
+}
+
+#slide section:nth-of-type(3) {
+    background-image: url(/Images/universe-gallery-item-3.jpg);
+    min-height: 680px;
+}
+
+#slide section:nth-of-type(4) {
+    background-image: url(/Images/universe-gallery-item-4.jpg);
+    min-height: 680px;
+}
+
+#slide section:nth-of-type(5) {
+    min-height: 680px;
+}
+
+#slide section:nth-of-type(5) img {
+    height: auto;
+    width: 60%;
+    position: relative;
+    left: 250px;
+    bottom: 100px;
+}
+
+#slide section:nth-of-type(5) #txt_slide {
+    position: relative;
+    left: 300px;
+    bottom: 450px;
+}
+
+#slide section:nth-of-type(5) h3 {
+    color: #D1DADF;
+    font-weight: 1;
+    margin: 0px 0px 30px;
+    font-size: 1.6em;
+}
+
+#slide section:nth-of-type(5) p {
+    color: #989FA3;
+    font-weight: 1;
+    line-height: 25px;
+    width: 50%;
+    margin: 0px 0px 30px;
+}
